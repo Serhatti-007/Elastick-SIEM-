@@ -103,6 +103,7 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
 7.Şimdi "View events" sekmesine gelerek toplanan logları inceleyebiliriz.
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-events.png" width="auto"><br><br>
 <h2>➡️ Elastic Defend Alarm üretme ⏰</h2>
+<h4>Elastic alarm üretimi, Elastic Security'de sistemdeki tehditlerin veya anormalliklerin tespit edilmesine ve bunun sonucunda bir uyarı (alarm) oluşturulmasına dayanan önemli bir güvenlik mekanizmasıdır. Bu süreç, Elastic Stack içindeki algılama kuralları ve olay verileri aracılığıyla gerçekleştirilir. İşte detaylar:</h4>
     <h4>1. Algılama Süreci</h4>
     <ul>
         <li>Elastic Defend, sistemde gerçekleşen olayları (ör. process, file, network gibi) izler ve toplar.</li>
@@ -130,5 +131,17 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
         <li>Yetki yükseltme girişimlerinin tespiti.</li>
         <li>Şüpheli ağ bağlantılarının tespiti.</li>
     </ul>
-<h5>Alarm oluşturabilmek için öncelikle bir kural tanımlamamız gerekir; aksi takdirde alarm üretimi mümkün olmaz, sadece gelen logları manuel inceleyebiliriz. Tanımlanan kural, sistemde gerçekleşen olayları belirlenen kriterlere göre değerlendirir ve tespit edilen tehditlere yönelik uyarılar oluşturur. Bu, güvenlik yönetiminde ilk ve en önemli adımdır.</h5>
+<h4>Alarm oluşturabilmek için öncelikle bir kural tanımlamamız gerekir; aksi takdirde alarm üretimi mümkün olmaz, sadece gelen logları manuel inceleyebiliriz ve manuel müdahale edebiliriz. Tanımlanan kural, sistemde gerçekleşen olayları belirlenen kriterlere göre değerlendirir ve tespit edilen tehditlere yönelik uyarılar oluşturur. Bu, güvenlik yönetiminde ilk ve en önemli adımdır.Mevcut durumda birçok kural bulunmaktadır ve çözüm süreçlerinize uygun olarak kurallar ekleyebilirsiniz. Ancak, herhangi bir kural eklemezseniz, otomatik olarak hiçbir alarm almanız mümkün olmaz. Aynı şekilde, kuralların sağladığı otomatik müdahale gibi mekanizmalardan da yararlanamazsınız. Bu sunumda, sürecin daha anlaşılır olması adına yalnızca bir adet kural ekliyoruz. </h4>
+1.Şimdi bir kural oluşturacağız, kullanacağımız kural "Endpoint Security (Elastic Defend)".<br><br>
+2."Endpoint Security (Elastic Defend)" bu kuralı ne yapıyor ?
+    <ul>
+        <li>Zararlı yazılımların (malware) tespiti için malware taraması (signature-based detection).</li>
+        <li>Dosyaların izolasyonu (file quarantine & deletion).</li>
+        <li>Yürütülebilir zararlı dosyaların engellenmesi (.exe, .dll, vb.).</li>
+        <li>Şüpheli hash'lere sahip dosyaların algılanması.</li>
+        <li>Temel anormalliklere dayalı tehdit algılama (heuristic-based detection).</li>
+    </ul>
+
+3.Security->Rules->Detection rules(SIEM).<br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-rules.png" width="auto"><br><br>
 
