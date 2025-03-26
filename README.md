@@ -41,5 +41,24 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
 6.Artık "System" entegrasyonumuzu sağladığımıza göre, bir "Dashboard" görüntüleyelim. Örnek olarak, sistem metrikleri hakkında bize bilgi versin.<br>
 7.Managment->Integrations->System->Assets->[Metrics System] Host overview<br>
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/system-host-overview.png" width="auto"><br><br>
-<h2>Network Packed Capture Entegrasyonu ekleme</h2>
+<h2>Network Packed Capture Entegrasyonu </h2>
 <h4>Network Packet Capture entegrasyonu, bir ağdaki paket trafiğini yakalamak ve analiz etmek için kullanılan bir özelliktir. Elastic Stack içinde bu entegrasyon, ağ güvenliğini sağlamak ve olası tehditleri belirlemek için detaylı veri sağlar. Özellikle, ağdaki şüpheli aktiviteleri izleme, performansı analiz etme ve sorun giderme gibi amaçlar için kullanılır.</h4>
+1.Entegrasyonlar sayfasında, sorgu çubuğunu kullanarak Network Packed Capture'i arayın ve entegrasyonu seçin.<br>
+2.Managment->Integrations->Network Packed Capture>add System<br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/network-capture-integration.png" width="auto"><br><br>
+3.Entegrasyonumuzu isimlendirip diğer seçeneklere dokunmadan, en alt kısımda bulunan "Existing Hosts" seçeneğine tıklıyoruz. Daha önce tanımladığımız "Agent Policies" varlığımızı seçtikten sonra "Save and continue" diyerek işlemimizi tamamlıyoruz.
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/network-capture-add.png" width="auto"><br><br>
+4.Artık "Network Packed Capture" entegrasyonumuzu sağladığımıza göre, Kibana üzerinden bir "Dashboard" görüntüleyelim. Örnek olarak, ağ trafiği hakkında genel grafikleri alalım.<br>
+5.Kibana->Dashboard->[Network Packet Capture] Overview
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/network-capture-overview.png" width="auto"><br><br>
+6.Şimdi dashboard üzerinde 24 saat içerisinde gelmiş olan bütün logları "Discover" sekmesi üzerinden görüntüleyelim.  
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/network-capture-overview-discover.png" width="auto"><br><br>
+7.Aşağıda görüldüğü üzere 24 saat içerisinde gelen logları "Discover" sayesinde görüntüleyebilir ve detayları inceleyebilirsiniz.
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/Network-capture-discover.png" width="auto"><br><br>
+<h2>Elastic Defend Entegrasyonu</h2>
+<h4>Elastic Defend Elastic Stack'in bir güvenlik çözümü olarak sisteminizi koruma, tehditleri algılama ve müdahale yetenekleri sunar. Uç noktaları (endpoint) izleyerek kötü amaçlı yazılımları, şüpheli davranışları ve güvenlik açıklarını gerçek zamanlı olarak tespit etmeyi hedefler.</h4>
+1.Entegrasyonlar sayfasında, sorgu çubuğunu kullanarak Network Elastic Defend'i arayın ve entegrasyonu seçin.<br>
+2.Managment->Integrations->Elastic Defend>add Elastic Defend<br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-integration.png" width="auto"><br><br>
+3.Entegrasyonumuzu isimlendirip diğer seçeneklere dokunmadan, en alt kısımda bulunan "Existing Hosts" seçeneğine tıklıyoruz. Daha önce tanımladığımız "Agent Policies" varlığımızı seçtikten sonra "Save and continue" diyerek işlemimizi tamamlıyoruz.
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-integration-add.png" width="auto"><br><br>
