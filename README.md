@@ -1,6 +1,6 @@
 # Elastick-SIEM-
-Bu repo, ELK Stack'in bulut tabanlı deneme sürümü üzerinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve ELK endpoint ve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.
-(Bu çalışmada toplanıp işlenen bütün veriler kişisel bilgisayarım üzerinden gerçekleştirilmiştir.)
+Bu repo, ELK Stack'in bulut tabanlı deneme sürümü üz0erinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve ELK endpoint ve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.
+(Bu çalışmada sadece tek bir client kullanılmıştır.)
 <hr>
 
 Elastic Cloud Deneme sayfasına gidin = https://cloud.elastic.co/registration?elektra=guide-welcome-cta <br>
