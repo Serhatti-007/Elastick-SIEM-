@@ -144,4 +144,4 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
 
 3.Security->Rules->Detection rules(SIEM).<br>
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-rules.png" width="auto"><br><br>
-
+4.Artık bir alarm oluşturma zamanı geldi 
