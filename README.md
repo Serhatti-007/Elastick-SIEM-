@@ -1,5 +1,5 @@
 # Elastick-SIEM-
-Bu repo, ELK Stack'in bulut tabanlı deneme sürümü üzerinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve ELK endpointve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.
+Bu repo, ELK Stack'in bulut tabanlı deneme sürümü üzerinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve ELK endpoint ve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.
 (Bu çalışmada toplanıp işlenen bütün veriler kişisel bilgisayarım üzerinden gerçekleştirilmiştir.)
 <hr>
 
