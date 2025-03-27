@@ -144,4 +144,15 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
 
 3.Security->Rules->Detection rules(SIEM).<br>
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-rules.png" width="auto"><br><br>
-4.Artık bir alarm oluşturma zamanı geldi 
+4.Artık örnek bir alarm oluşturma zamanı geldi.<br>
+5.Kullanacağımız basit yöntem, bir EICAR Test Virüsü, zararsız bir dosya olup, antivirüs yazılımlarını test etmek amacıyla geliştirilmiştir. Gerçek bir virüs değildir ve bilgisayarınıza zarar vermez. Bu dosya, antivirüs yazılımlarının tehdit algılama yeteneklerini test etmek için kullanılır. EICAR dosyası, belirli bir kod dizisi içerir ve bu kod, antivirüs yazılımları tarafından zararlı olarak algılanacak şekilde tasarlanmıştır.<br>
+6.Desktop üzerinde bir metin belgesi açalım ( X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H* ) içerisine bu kod parçacığını ekliyoruz, ardından herhangi bir isim verip .exe,.com gibi çalıştırılabilir bir formatta kaydedelim.(Farklı kaydet yapabilirsiniz.)<br><br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/Create-malware.png" width="auto"><br><br>
+7.Kayıt tamamlandığı anda, "Elastic Security" bize bir bildirim gönderiyor.<br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-endpoind-alert.png" width="auto"><br><br>
+8.Oluşturduğumuz, "Endpoint Security (Elastic Defend)" kuralı, Elastic Endpoint'in imza tabanlı tehdit algılama yeteneklerinden faydalanır. EICAR test dosyası gibi zararsız bir test kodu bile Elastic tarafından algılanabilir çünkü bu kod, önceden tanımlanmış ve tehdit veri tabanında kayıtlı bir imzaya sahiptir."Endpoint Security (Elastic Defend)" kuralı, tespit edilen dosyaya otomatik olarak müdahale eder, karantinaya alır ve sistemden kaldırır.<br>
+9.Şimdi aldığımız uyarıyı "Elastic" üzerinden inceleyelim  (Security->Alerts)      
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-page.png" width="auto" style:><br><br>
+10.Dosyanın algılanması ve Elastic'in alarm oluşturması, imza tabanlı algılama mekanizmasının çalıştığını doğruluyor.Bu, sistemin sadece pasif bir şekilde izlemekle kalmayıp, güvenlik olaylarına hızlı ve etkili bir şekilde yanıt verdiğini gösteriyor.<br>
+11.Alerts sayfasında "Investigate in Timeline 🖧", Elastic Security'de bir alarmın (alert) detaylarını zaman çizelgesi (timeline) üzerinde incelemenizi sağlayan bir özelliktir. Bu özellik, bir güvenlik olayının nasıl geliştiğini ve hangi süreçlerin bu olaya dahil olduğunu anlamanıza yardımcı olur, tehditleri daha hızlı analiz etmek için çok önemli bir özellik.
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-investigation_timeline.png" width="auto" style:><br><br>
