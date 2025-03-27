@@ -1,12 +1,12 @@
 # Elastic-SIEM-
-Bu repo, Elastic'in bulut tabanlı deneme sürümü üz0erinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve Elastic endpoint ve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.
-(Bu çalışma kişisel Windows client üzerinden gerçekleştirilmiştir.)
+<h4>Bu repo, Elastic'in bulut tabanlı deneme sürümü üz0erinden temel entegrasyonlarına ve SIEM çözümlerine giriş sağlayan bir rehberdir. İçerik; sistem entegrasyonu, ağ paket entegrasyonu ve Elastic endpoint ve alarm oluşturma entegrasyonu gibi konuları kapsamaktadır.</h4>
+ <h4>Elastic SIEM (Security Information and Event Management), Elastic Stack'in bir parçası olarak güvenlik olaylarını ve bilgilerini yönetmek için kullanılan bir çözümdür. </h4>
 <hr>
 
 Elastic Cloud Deneme sayfasına gidin = https://cloud.elastic.co/registration?elektra=guide-welcome-cta <br>
 Gerekli bilgiler doğrultusunda giriş yapın.
 
-<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/sign-up-trial.png" width="auto">
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/sign-up-trial.png" width="auto"><br>
 Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bir ad verin ve Dağıtım oluştur'u seçin.
 <br><br>
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/create-first-deployment.png" width="auto">
@@ -152,7 +152,7 @@ Giriş yaptıktan sonra bir dağıtım oluşturabilirsiniz. Dağıtımınıza bi
 <img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-endpoind-alert.png" width="auto"><br><br>
 8.Oluşturduğumuz, "Endpoint Security (Elastic Defend)" kuralı, Elastic Endpoint'in imza tabanlı tehdit algılama yeteneklerinden faydalanır. EICAR test dosyası gibi zararsız bir test kodu bile Elastic tarafından algılanabilir çünkü bu kod, önceden tanımlanmış ve tehdit veri tabanında kayıtlı bir imzaya sahiptir."Endpoint Security (Elastic Defend)" kuralı, tespit edilen dosyaya otomatik olarak müdahale eder, karantinaya alır ve sistemden kaldırır.<br>
 9.Şimdi aldığımız uyarıyı "Elastic" üzerinden inceleyelim  (Security->Alerts)      
-<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-page.png" width="auto" style:><br><br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-pages.png" width="auto" style:><br><br>
 10.Dosyanın algılanması ve Elastic'in alarm oluşturması, imza tabanlı algılama mekanizmasının çalıştığını doğruluyor.Bu, sistemin sadece pasif bir şekilde izlemekle kalmayıp, güvenlik olaylarına hızlı ve etkili bir şekilde yanıt verdiğini gösteriyor.<br>
 11.Alerts sayfasında "Investigate in Timeline 🖧", Elastic Security'de bir alarmın (alert) detaylarını zaman çizelgesi (timeline) üzerinde incelemenizi sağlayan bir özelliktir. Bu özellik, bir güvenlik olayının nasıl geliştiğini ve hangi süreçlerin bu olaya dahil olduğunu anlamanıza yardımcı olur, tehditleri daha hızlı analiz etmek için çok önemli bir özellik.
-<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-investigation_timeline.png" width="auto" style:><br><br>
+<img src="https://github.com/Serhatti-007/Elastick-SIEM-/blob/main/Picture/defender-alerts-investigation_timelinee.png" width="auto" style:><br><br>
